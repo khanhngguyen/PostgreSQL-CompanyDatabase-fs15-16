@@ -1,0 +1,8 @@
+-- Retrieve the team names and their corresponding project count.
+-- Retrieve the projects managed by the managers whose first name starts with "J" or "D".
+-- Retrieve all the employees (both directly and indirectly) working under Andrew Martin
+-- Retrieve all the employees (both directly and indirectly) working under Robert Brown
+-- Retrieve the average hourly salary for each title.
+-- Retrieve the employees who have a higher hourly salary than their respective team's average hourly salary.
+-- Retrieve the projects that have more than 3 teams assigned to them.
+-- Retrieve the total hourly salary expense for each team.
