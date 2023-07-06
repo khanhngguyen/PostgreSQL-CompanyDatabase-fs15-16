@@ -86,11 +86,11 @@ CREATE TABLE public.team_project
 (
     id serial PRIMARY KEY,
     team_id integer 
-        REFERENCES public.teams (id)
+        REFERENCES public.teams(id)
         ON UPDATE CASCADE
-        ON DELETE CASCADE
+        ON DELETE CASCADE,
     project_id integer
-        REFERENCES public.projects (id)
+        REFERENCES public.projects(id)
         ON UPDATE CASCADE
         ON DELETE CASCADE
 );
@@ -104,3 +104,18 @@ FROM '/Users/khanhngguyen/Desktop/KHANH/Integrify/fs15_16_company-database/data/
 DELIMITER ',' 
 CSV HEADER QUOTE '\"' 
 NULL 'NULL';
+
+-- create hour_tracking table
+CREATE TABLE public.hour_tracking
+(
+    id serial PRIMARY KEY,
+    employee_id integer
+        REFERENCES public.employees(id)
+        ON UPDATE CASCADE
+        ON DELETE CASCADE,
+    project_id integer
+        REFERENCES public.projects(id)
+        ON UPDATE CASCADE
+        ON DELETE CASCADE,
+    total_hours numeric(6, 2)
+);
