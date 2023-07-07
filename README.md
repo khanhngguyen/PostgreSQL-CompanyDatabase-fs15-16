@@ -55,3 +55,28 @@ SELECT create_project_with_teams(
     ARRAY[1, 2, 3]
 );
 ```
+
+## Queries result
+1. Retrieve the team names and their corresponding project count.
+![query 1](./result/1.png)
+
+2. Retrieve the projects managed by the managers whose first name starts with "J" or "D".
+![query 2](./result/2.png)
+
+3. Retrieve all the employees (both directly and indirectly) working under Andrew Martin
+![query 3](./result/3.png)
+
+4. Retrieve all the employees (both directly and indirectly) working under Robert Brown
+![query 4](./result/4.png)
+
+5. Retrieve the average hourly salary for each title.
+![query 5](./result/5.png)
+
+6. Retrieve the employees who have a higher hourly salary than their respective team's average hourly salary.
+![query 6](./result/6.png)
+
+7. Retrieve the projects that have more than 3 teams assigned to them.
+![query 7](./result/7.png)
+
+8. Retrieve the total hourly salary expense for each team.
+![query 8](./result/8.png)
